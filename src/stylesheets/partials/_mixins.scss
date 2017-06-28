@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+// Mixin
+//////////////////////////////
+@mixin hover($opacity, $sec: .3s, $easing: ease) {
+  transition: opacity $sec $easing;
+
+  &:hover { opacity: $opacity; }
+}
+
+@mixin gradient($from, $to) {
+  background: $from;
+  background: -webkit-gradient(linear, left top, left bottom color-stop(0, $from), color-stop(1, $from), color-stop(1, $to));
+  background: linear-gradient(to bottom, $from 0%, $from 50%, $to 100%);
+}
+
+@mixin mq($size) {
+  @if $size == mobile {
+    @media only screen and (min-width: $bp-larger-than-mobile) { @content; }
+  }
+  @else if $size == phablet {
+    @media only screen and (min-width: $bp-larger-than-phablet) { @content; }
+  }
+  @else if $size == tablet {
+    @media only screen and (min-width: $bp-larger-than-tablet) { @content; }
+  }
+  @else if $size == desktop {
+    @media only screen and (min-width: $bp-larger-than-desktop) { @content; }
+  }
+  @else if $size == desktophd {
+    @media only screen and (min-width: $bp-larger-than-desktophd) { @content; }
+  }
+}

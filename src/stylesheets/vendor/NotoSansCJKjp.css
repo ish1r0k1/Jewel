@@ -1,0 +1,24 @@
+/*!
+ * "Noto Sans" is lisenced under the SIL Open Font License 1.1
+ * https://www.google.com/get/noto/
+ */
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans CJK JP Light'), local('NotoSansCJKjp-Light'), url(../fonts/NotoSansCJKjpSubset-Light.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans CJK JP'), local('NotoSansCJKjp-Regular'), url(../fonts/NotoSansCJKjpSubset-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans CJK JP Bold'), local('NotoSansCJKjp-Bold'), url(../fonts/NotoSansCJKjpSubset-Bold.woff2) format('woff2');
+}
